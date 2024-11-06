@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('background.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    
+    <h1 id="title">Uncover Your Hobbies - A Fun Interests Survey</h1>
+    <p id="description">Thank you for taking the time to share a bit about your hobbies and interests! This survey will help us get to know you better.</p>
+    
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" name="name" placeholder="Enter your name: " required>
+
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age: </label>
+        <input id="number" type="number" name="age" min="1" max="100" placeholder="Enter your age">
+
+        <p>What are your top three hobbies? (Select atleast three)</p>
+        <label><input type="checkbox" name="hobbies" value="reading">Reading</label>
+        <label><input type="checkbox" name="hobbies" value="traveling">Traveling</label>
+        <label><input type="checkbox" name="hobbies" value="cook/bake">Cooking/Baking</label>
+        <label><input type="checkbox" name="hobbies" value="gaming">Gaming</label>
+        <label><input type="checkbox" name="hobbies" value="garden">Gardening</label>
+        <label><input type="checkbox" name="hobbies" value="a&cg">Arts & Crafts</label>
+        <label><input type="checkbox" name="hobbies" value="photog">Photography</label>
+        <label><input type="checkbox" name="hobbies" value="write">Writing</label>
+        <label><input type="checkbox" name="hobbies" value="music">Music</label>
+        <label><input type="checkbox" name="hobbies" value="watch">Watching Movies/ TV Shows</label>
+        <label><input type="checkbox" name="hobbies" value="hike">Hiking/Camping</label>
+        <label><input type="checkbox" name="hobbies" value="diy">DIY Projects</label>
+        <label><input type="checkbox" name="hobbies" value="others">Other (Please specify)</label>
+        <input type="text" id="other_details" name="other_details">
+
+        <label for="favorite_hobby">How did you get into your favorite hobby?</label><br>
+        <textarea id="favorite_hobby" name="favorite_hobby"placeholder="What inspired you to start it, and why do you enjoy it?"></textarea>
+        
+        <p>How often do you engage in your hobbies?</p>
+        <label><input type="radio" name="frequency" value="everyday" required>Everyday</label>
+        <label><input type="radio" name="frequency" value="few" required>Few times a week</label>
+        <label><input type="radio" name="frequency" value="once" required>Once a week</label>
+        <label><input type="radio" name="frequency" value="few_times_month" required>A few times a month</label>
+        <label><input type="radio" name="frequency" value="rare" required>Rarely</label>
+
+        <label for="new_hobbies">Are there any new hobbies you would like to try?</label><br>
+        <textarea id="new_hobbies" name="new_hobbies" placeholder="Do you have any new hobbies?"></textarea>
+
+        <p>Do you enjoy doing hobbies alone or with others?</p>
+        <select name="preference" id="dropdown" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="alone">Alone</option>
+            <option value="others">With friends/family</option>
+            <option value="either">Either, depends on the hobby</option>
+        </select>
+        
+        <label for="relax">What is your favorite way to relax and unwind?</label>
+        <textarea id="relax" name="relax" rows="2" cols="40"></textarea><br>
+        
+        <label for="skills">Are there any specific skills you would like to learn related to your hobbies?</label><br>
+        <textarea id="skills" name="skills" rows="2" cols="40" placeholder="Examples: learning a new instrument, improving photography skills, mastering a cooking technique."></textarea><br>
+        
+        <label for="favorites">Do you have a favorite book, movie, or music genre that reflects your interests?</label><br>
+        <textarea id="favorites" name="favorites"></textarea><br>
+        
+        <label for="fun_fact">What is a fun fact about one of your hobbies that most people don’t know?</label><br>
+        <textarea id="fun_fact" name="fun_fact"></textarea><br>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional feedback here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
+
